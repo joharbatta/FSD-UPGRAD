@@ -1,0 +1,51 @@
+<html>
+    <head>
+            <meta charset='UTF-8'/>
+            <meta name='viewport'
+  content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+<link rel='stylesheet' href='styles.css'/>
+        <script>
+             var email=document.getElementById('email');
+    var Password=document.getElementById('pass');
+    var data=
+    {
+        email:email;
+        Password:pass;
+    }
+
+       function SignIn()
+        {
+            alert("You are Signed In");
+
+            console.log(data);
+
+        }
+        </script>
+        </head>
+        <body>
+
+                <div class='menu-container'>
+                        <form>
+                    <div class='menu'>
+                      
+                    <div class='logo'><a href="index.html"><img src="images/awesome-logo.svg"></a></div>
+                    <div class='abc'>About </div>
+                    <div class='abc'>Racing</div>
+                    <div class='abc'><a href="signup.html"><input type="button" value="Sign up"></div>
+                    <div class='abc'><a href="signin.html"><input type="button" value="Login"></div>
+            </form>
+                  </div>
+                </div>
+          <div id="form">  
+<form id="form1">
+    <fieldset class="field">
+        <input  id ="email" class="ip" type="text" placeholder="Email"><br><br>
+        <input  id="pass" class="ip" type="text" placeholder="Password"><br><br>
+           <input class="btn" type="button" onclick="SignIn()" value="Sign In">
+    </fieldset>
+
+</form>
+</div>
+</body>
+
+</html>
