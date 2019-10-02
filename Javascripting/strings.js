@@ -1,2 +1,2 @@
-const someString = 'this is a string'
-console.log(someString)
+const pizzaToppings=['tomato sauce','cheese','pepperoni']
+console.log(pizzaToppings)
