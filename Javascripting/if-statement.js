@@ -1,4 +1,4 @@
-let fruit='orange'
+let fruit='orange' //declare variable
 fruit=fruit.length
 if(fruit>5)
 {
