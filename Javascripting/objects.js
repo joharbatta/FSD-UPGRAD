@@ -3,6 +3,6 @@
        crust: 'deep dish',
        serves: 2
 
-     }
+     }   //object declare
 
-     console.log(pizza)
+     console.log(pizza)   //show
