@@ -1,7 +1,7 @@
 let total=0
 let limit=10
-for(let i=0;i<limit;i++)
+for(let i=0;i<limit;i++)   //for loop
 {
 	total+=i;
 }
-console.log(total)
+console.log(total) //show
