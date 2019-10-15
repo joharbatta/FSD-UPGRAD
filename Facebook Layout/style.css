@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .menu-container {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #385898;  /* Blue */
+   height: 40px;
+    
+  }
+  
+  .menu { 
+     /* For debugging */
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+   padding: 8px;
+  }
+
+  .header-container
+{
+    background-color:#E9EBEE;
+    padding: 12px;
+    height: 1200px;
+	 color: #5995DA;
+
+     display: flex;
+     justify-content: center;
+
+}
+.header {
+    
+  width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.header-item {
+    background-color:#E9EBEE;
+    border: 3px solid #fff;
+    height: auto;
+    flex: 1;
+  }
+.header-one 
+{
+    flex:1.5;
+}
+.header-two
+{
+  
+    flex:4;
+    background-color: rgb(255, 255, 255);
+     display: flex;
+     justify-content: center;
+}
+.header-three
+{
+    flex:2;
+}
+
+
+  .inner21{
+  background-color:#E9EBEE;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .inner2-item{
+      background-color: white;;
+     margin-top: 10px;
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+  }
+  .inner2-one
+  {
+      flex: 1;
+    
+  }
+  .inner2-two
+  {
+      flex: 2.5;
+  }
+  .inner2-three
+  {
+      flex: 2.5;
+  }
