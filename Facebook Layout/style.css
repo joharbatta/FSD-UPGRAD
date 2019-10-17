@@ -6,6 +6,9 @@
   
   .menu-container {
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
     justify-content: center;
     color: #fff;
     background-color: #385898;  /* Blue */
@@ -15,6 +18,7 @@
   
   .menu { 
      /* For debugging */
+     
     width: 900px;
     display: flex;
     justify-content: space-around;
@@ -24,7 +28,7 @@
   .header-container
 {
     background-color:#E9EBEE;
-    padding: 12px;
+    padding: 50px;
     height: 1200px;
 	 color: #5995DA;
 
@@ -33,7 +37,6 @@
 
 }
 .header {
-    
   width: 1000px;
   display: flex;
   justify-content: space-around;
@@ -41,17 +44,18 @@
 }
 .header-item {
     background-color:#E9EBEE;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     height: auto;
     flex: 1;
   }
 .header-one 
 {
     flex:1.5;
+    
 }
 .header-two
 {
-  
+  height: 1500px;
     flex:4;
     background-color: rgb(255, 255, 255);
      display: flex;
@@ -59,7 +63,12 @@
 }
 .header-three
 {
-    flex:2;
+ 
+  
+    flex:2.5;
+    background-color: rgb(255, 255, 255);
+     display: flex;
+     justify-content: center;
 }
 
 
@@ -68,7 +77,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
   }
   
   .inner2-item{
@@ -78,9 +87,14 @@
     width: 500px;
     height: 300px;
   }
-  .inner2-one
+  .inner2-zero
   {
-      flex: 1;
+    flex: 0.5;
+
+  }
+   .inner2-one
+  {
+      flex: 1.5;
     
   }
   .inner2-two
@@ -90,4 +104,41 @@
   .inner2-three
   {
       flex: 2.5;
-  }
+  } 
+
+
+  .inner31{
+
+    background-color:#E9EBEE;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .inner3-item{
+      
+        background-color: white;;
+       margin-top: 10px;
+      border: 1px solid black;
+      width: 300px;
+      height: 500px;
+    }
+    .inner3-zero
+    {
+      flex: 0.2;
+  
+    }
+     .inner3-one
+    {
+        flex: 2.5;
+      
+    }
+    .inner3-two
+    {
+        flex: 3.5;
+    }
+    .inner3-three
+    {
+        flex: 0.5;
+    } 
