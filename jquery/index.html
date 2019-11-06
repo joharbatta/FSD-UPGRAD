@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <style>
+                .bluee {
+                  background-color: blue;
+                }
+                .redd{
+                background-color:red;
+                
+                }
+        </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+  $("#toggle").click(function(){
+    $("p").toggle();
+  });
+  $(".blue").click(function(){
+    $("p").removeClass("redd");
+    $("p").addClass("bluee");
+  });
+  $(".red").click(function(){
+    $("p").removeClass("bluee");
+    $("p").addClass("redd");
+  });
+  
+  
+});
+</script>
+</head>
+<body>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="toggle">Toggle</button>
+<p>Johar Batta</p>
+<button  class="blue">blue</button>
+<button class="red">red</button>
+
+
+</body>
