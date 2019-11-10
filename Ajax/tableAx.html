@@ -1,0 +1,79 @@
+<!Doctype html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="add()">add</button>
+        <table id="table" cellspacing:50;>
+            <tr>
+                <th>
+                    
+                </th>
+                <th>email</th>
+                <th>
+                    first_name
+                </th>
+                <th>last_name</th>
+            </tr>
+
+        </table>
+        <style>
+        td{
+            width: 60px;
+            height: 60px;
+            border: 1px solid #000000;
+        }
+        table
+        {
+            margin: 0 auto;
+        }
+        </style>
+        <script>
+        var i=0;
+        function add()
+        {
+            var xhr=new XMLHttpRequest();
+            xhr.onreadystatechange=function()
+            {
+                if(this.readyState==4 && this.status==200)
+                {
+                    var newrow=document.createElement("tr");
+                    var newtdid=document.createElement("td");
+                    var newtdemail=document.createElement("td");
+                    var newtdfirst_name=document.createElement("td");
+                    var newtdlast_name=document.createElement("td");
+                    var newtdimg=document.createElement("td");
+                    var newavatar=document.createElement("img");
+                    var json=JSON.parse(this.responseText);
+var textid=json.data[i].id;
+var textemail=json.data[i].email;
+var textfirst_name=json.data[i].first_name;
+var textlast_name=json.data[i].last_name;
+var textavatar=json.data[i].avatar;
+newavatar.src-textavatar;
+var textNodeid=document.createTextNode(textid);
+var textNodeemail=document.createTextNode(textemail);
+var textNodefirst_name=document.createTextNode(textfirst_name);
+var textNodelast_name=document.createTextNode(textlast_name);
+newtdid.appendChild(textNodeid);
+newtdemail.appendChild(textNodeemail);
+newtdfirst_name.appendChild(textNodefirst_name);
+newtdlast_name.appendChild(textNodelast_name);
+newtdimg.appendChild(newavatar);
+newrow.appendChild(newtdid);
+newrow.appendChild(newtdemail);
+newrow.appendChild(newtdfirst_name);
+newrow.appendChild(newtdlast_name);
+newrow.appendChild(newtdimg);
+var table=document.getElementById("table");
+table.appendChild(newrow);
+i++;
+                }
+            }
+        xhr.open("GET","https://reqres.in/api/users?pages=2",true);
+        xhr.send();
+        };
+        </script>
+    </body>
+</html>
