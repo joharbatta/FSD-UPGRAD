@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+    <head>
+ <style>
+            table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+        </style>
+        <meta charset='UTF-8'/>
+        <title>Some Web Page</title>
+        <link rel='stylesheet' href='styles.css'/>
+     
+    </head>
+    <body>
+
+        <center>
+     <div class='forms'>
+         <input id="name" type="text" placeholder='Name'>
+         <input id="email" type="text" placeholder='email'>
+         <input id="phone" type="text" placeholder='phone'>
+         <input id="address" type="text" placeholder='address'>
+         <button id="b1" >add</button>
+   
+   
+       </div>
+     
+      <div class='tble'>
+        <table style="width:50%" id='tb'>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>phone</th>
+              <th>address</th>
+            </tr>
+         
+          </table>
+      </div>
+     
+        </center>
+
+        <script>
+            document.getElementById('b1').addEventListener("click",myfunction);
+            function myfunction()
+            {
+                 var name= document.getElementById('name').value;
+              var email= document.getElementById('email').value;
+              var phone= document.getElementById('phone').value;
+              var address= document.getElementById('address').value;
+
+                 var tr=document.createElement('tr');
+
+
+                 var td= document.createElement('td');
+                 var node=document.createTextNode(name);
+                 td.appendChild(node);
+                 tr.appendChild(td);
+                 
+                 var td= document.createElement('td');
+                 var node=document.createTextNode(email);
+                 td.appendChild(node);
+                 tr.appendChild(td);
+
+                 var td= document.createElement('td');
+                 var node=document.createTextNode(phone);
+                 td.appendChild(node);
+                 tr.appendChild(td);
+
+                 var td= document.createElement('td');
+                 var node=document.createTextNode(address);
+                 td.appendChild(node);
+                 tr.appendChild(td);
+                 
+               
+             
+                 
+                 document.getElementById('tb').appendChild(tr);
+            }
+        </script>
+    </body>
+</html>
+
